@@ -10,4 +10,21 @@ public class Car {
         this.model = model;
         this. colour = colour;
     }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
 }
