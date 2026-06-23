@@ -39,7 +39,7 @@ public class Garage
     {
         if (checkIfValid(car, license))
         {
-            parkedCars.add(Car);
+            parkedCars.add(car);
             return true;
         }
         return false;
@@ -65,7 +65,7 @@ public class Garage
 
     public int getFreeSpace()
     {
-        return maxCapacity = parkedCars.size();
+        return maxCapacity - parkedCars.size();
     }
 
     public Car getCarByLicense(String license)
