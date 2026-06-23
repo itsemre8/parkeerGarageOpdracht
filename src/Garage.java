@@ -7,6 +7,13 @@ public class Garage {
     private int id;
     private int maxCapacity;
 
+    public Garage(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+        this.parkedCars = new ArrayList<>();
+        this.id = counter;
+        counter++;
+    }
+
     public boolean checkIfValid(Car car, License license) {
         if (parkedCars.size() >= maxCapacity) {
             return false;
@@ -21,4 +28,4 @@ public class Garage {
         }
         return true;
     }
-} 
+}
